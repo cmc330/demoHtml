@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html>
+<style>
+h1 {
+    text-align: center;
+    font-size: xx-large;
+} 
+body{
+    background-color: rgb(71, 70, 70);
+    justify-content: center;
+    color: white
+}
+button{
+    background-color: crimson;
+}
+</style>    
 
-<script>
-    function change_color(element, color) {
-        e.ement.style.color = color;
-    }
-</script>
 
-<body style='background-color: dimgrey;'>
+<body class="text_color">
 
 <h1>Memento mori!</h1>
 <img src="https://i0.wp.com/hapticpress.com/wp-content/uploads/2017/06/mementomori2.jpg?fit=3530%2C3064" alt="skull with wings">
 
 <p>
-    Memento mori is latn for "remmeber that you [have to] die". 
-    It is not ment to be macabre, it is to remind you to live fully in the present and to not waste the time you have on earth.
+    Memento mori is latin for "remmeber that you [have to] die". 
+    It is not ment to be macabre, 
+    it is to remind you to live fully in the present and to not waste the time you have on earth on things that you cannot control..
     You can read more about it <a href ="https://en.wikipedia.org/wiki/Memento_mori">here</a>.
 </p>
 
-<button onclick="change_color(body, 'red')">Click me</button>
+<button onclick="change_color()">Change Text Red</button>
 
 </body>
+    <script>
+    const tc = document.querySelector(".text_color");
+    
+    function change_color() {
+        tc.style.color = "red";
+    }
+    </script>
 </html>
+
